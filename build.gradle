@@ -140,6 +140,8 @@ runIde {
     jvmArgs("-Didea.auto.reload.plugins=false")
     // Don't show "Tip of the Day" at startup
     jvmArgs("-Dide.show.tips.on.startup.default.value=false")
+    // Ignore unrecognized VM Options
+    jvmArgs("-XX:+IgnoreUnrecognizedVMOptions")
 
     // Uncomment to enable localization testing mode
     // jvmArgs("-Didea.l10n=true")
